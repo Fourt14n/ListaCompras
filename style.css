@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+:root {
+    --corPrincipal: #50ff5e;
+    --corBotao: #50d802;
+    --corBotaoHover: #64f105;
+    --corFundo: #8bfae7;
+    --corLimparHover: rgb(241, 158, 3);
+    --corLimpar: orange;
+    
+}
+body{
+    font-family: "Barlow Condensed", serif;
+    background-color: var(--corFundo);
+}
+
+.container{
+
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+    padding: 16px;
+}
+.title{
+    text-align: center;
+}
+.subtitle{
+    color: #666;
+    text-align: center;
+}
+#addItem{
+    background-color: var(--corBotao);
+    width: 100%;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 0;
+    margin: 10px 0;
+
+    &:hover{
+        background-color: var(--corBotaoHover);
+    }
+}
+.clean{
+    width: 50%;
+    background-color: var(--corBotao);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 0;
+
+    &:hover{
+        background-color: var(--corBotaoHover);
+    }
+}
+.clean-buy{
+    width: 50%;
+    background-color: var(--corLimpar);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 0;
+
+    &:hover{
+        background-color: var(--corLimparHover);
+    }
+}
+.actions{
+    display: flex;
+    gap: 5px;
+}
+#item{
+    width: 70%;
+}
+
+#quantidade{
+    width: 30%;
+}
+.inputGroup{
+    display: flex;
+    gap: 5px;
+}
+input{
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid #ebeaea;
+    margin: 5px 0;
+
+    &:focus{
+        outline: none;
+        border: 1px solid var(--corLimpar);
+    }
+}
+
+li{
+    display: flex;
+    margin: 20px 0;
+}
+
+li p {
+    margin-left: 5px;
+    width: 90%;
+    word-wrap: break-word;
+}
+li button{    
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+li input{
+    accent-color: var(--corPrincipal);
+}
