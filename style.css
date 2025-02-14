@@ -120,3 +120,15 @@ li button{
 li input{
     accent-color: var(--corPrincipal);
 }
+@media (max-width:800px){
+    .inputGroup{
+        flex-direction: column;
+    }
+    #item{
+        width: 97%;
+    }
+
+    #quantidade{
+        width: 97%;
+    }
+}
